@@ -4,4 +4,4 @@
 	https://matteogrosseleassignment3.herokuapp.com/ws/people?wsdl
 ## Usage
 	ant execute.client
-Note : The client automatically generates the stubs using the 'wsimport'command. In order to cahnge he target server, change the 'wsdl' property inside the build.xml file.
+Note : The client automatically generates the stubs using the  `wsimport` command. In order to cahnge he target server, change the `wsdl` property inside the build.xml file.
