@@ -29,12 +29,11 @@ Result : 1
 ---------- Request #6 ----------
 readPersonHistory(Long id, String measureType) => List :
 1 : 90 height
-2 : 86 height
 
 ---------- Request #7 ----------
 readMeasureTypes() => List :
 1 : 90 height
-2 : 86 height
+2 : 86 weight
 
 ---------- Request #8 ----------
 readPersonMeasure(Long id, String measureType, Long mid) => Measure :
