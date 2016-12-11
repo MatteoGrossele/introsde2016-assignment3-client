@@ -1,0 +1,51 @@
+---------- IntroSDE Assignment 3 Client ----------
+
+Server WSDL url : http://127.0.1.1:6902/ws/people?wsdl
+
+---------- Request #1 ----------
+readPersonList() => List :
+1 : Matteo Grossele
+2 : Chuck ChangedSurname
+3 : Jessica Jones
+4 : Pavel Kucherbaev
+
+---------- Request #2 ----------
+readPerson(Long id) => Person :
+1 : Matteo Grossele
+
+---------- Request #3 ----------
+updatePerson(Person p) => Person :
+Person 2 2 : Chuck ChangedSurname
+Person 2 edited 2 : Chuck ChangedSurname
+
+---------- Request #4 ----------
+createPerson(Person p) => Person :
+20 : Matteo Grossele 24-06-1993
+
+---------- Request #5 ----------
+deletePerson(Long id) :
+Result : 1
+
+---------- Request #6 ----------
+readPersonHistory(Long id, String measureType) => List :
+1 : 90 height
+2 : 86 height
+
+---------- Request #7 ----------
+readMeasureTypes() => List :
+1 : 90 height
+2 : 86 height
+
+---------- Request #8 ----------
+readPersonMeasure(Long id, String measureType, Long mid) => Measure :
+1 : 90 height
+
+---------- Request #9 ----------
+savePersonMeasure(Long id, Measure m) :
+99 : 9.999 height
+
+---------- Request #10 ----------
+updatePersonMeasure(Long id, Measure m) => Measure :
+99 before : 9.999 height
+99 after : 1.77 height
+
