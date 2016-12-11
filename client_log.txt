@@ -5,7 +5,7 @@ Server WSDL url : https://matteogrosseleassignment3.herokuapp.com/ws/people?wsdl
 ---------- Request #1 ----------
 readPersonList() => List :
 1 : Matteo Grossele
-2 : Chuck ChangedSurname
+2 : Chuck Norris
 3 : Jessica Jones
 4 : Pavel Kucherbaev
 
@@ -15,7 +15,7 @@ readPerson(Long id) => Person :
 
 ---------- Request #3 ----------
 updatePerson(Person p) => Person :
-Person 2 2 : Chuck ChangedSurname
+Person 2 2 : Chuck Norris
 Person 2 edited 2 : Chuck ChangedSurname
 
 ---------- Request #4 ----------
