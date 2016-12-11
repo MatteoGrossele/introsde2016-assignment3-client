@@ -1,6 +1,6 @@
 ---------- IntroSDE Assignment 3 Client ----------
 
-Server WSDL url : http://127.0.1.1:6902/ws/people?wsdl
+Server WSDL url : https://matteogrosseleassignment3.herokuapp.com/ws/people?wsdl
 
 ---------- Request #1 ----------
 readPersonList() => List :

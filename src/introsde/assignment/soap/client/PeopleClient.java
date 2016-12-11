@@ -229,6 +229,10 @@ public class PeopleClient{
 
         //Remove created measure for future executions
         people.deleteMeasure(99);
+        //Restore value of changed surname for future executions
+        p = people.readPerson(2);
+        p.setLastname("Norris");
+        result = people.updatePerson(p);
 
 
         writer_log.flush();

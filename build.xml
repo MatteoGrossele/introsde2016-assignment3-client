@@ -53,6 +53,7 @@
         <property name="lib.dir" value="WebContent/WEB-INF/lib" />
         <property name="web.dir" value="." />
         <property name="webcontent.dir" value="WebContent" />
+        <property name="wsdl" value="https://matteogrosseleassignment3.herokuapp.com/ws/people?wsdl"/>  
         <!-- ================================= 
 	          target: resolve downloads the dependencies to your lib folder              
 	         ================================= -->
@@ -117,7 +118,7 @@
             </java>
         </target>
 
-        <property name="wsdl" value="http://127.0.1.1:6902/ws/people?wsdl"/>  
+        
         <target name="wsimport">  
             <exec executable="wsimport" >  
                 <arg value="-verbose"/>  
