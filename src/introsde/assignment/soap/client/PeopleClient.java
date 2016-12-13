@@ -174,8 +174,8 @@ public class PeopleClient{
         measures = people.readMeasureTypes();
         
         for(Measure meas: measures) {
-            System.out.print(meas.getMid() + " : " + meas.getValue() + " " + meas.getType() +"\n");
-            writer_log.write(meas.getMid() + " : " + meas.getValue() + " " + meas.getType() +"\n");
+            System.out.print(meas.getMid() + " : " + meas.getValue() + " " + meas.getType() + " Person-" + meas.getIdPerson() + "\n");
+            writer_log.write(meas.getMid() + " : " + meas.getValue() + " " + meas.getType() + " Person-" + meas.getIdPerson() +"\n");
         }
 
         System.out.print("\n");
