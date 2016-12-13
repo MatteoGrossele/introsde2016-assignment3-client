@@ -1,50 +1,71 @@
----------- IntroSDE Assignment 3 Client ----------
+-------------------- IntroSDE Assignment 3 Client --------------------
 
 Server WSDL url : https://matteogrosseleassignment3.herokuapp.com/ws/people?wsdl
 
----------- Request #1 ----------
+-------------------- Request #1 --------------------
 readPersonList() => List :
-1 : Matteo Grossele
-2 : Chuck Norris
-3 : Jessica Jones
-4 : Pavel Kucherbaev
+List of the people stored :
 
----------- Request #2 ----------
+1 : Matteo Grossele 24-06-1993
+2 : Chuck Norris 10-03-1940
+3 : Jessica Jones 16-12-1981
+4 : Pavel Kucherbaev 24-10-1988
+
+-------------------- Request #2 --------------------
 readPerson(Long id) => Person :
-1 : Matteo Grossele
+Person with id 1 :
 
----------- Request #3 ----------
+1 : Matteo Grossele 24-06-1993
+
+-------------------- Request #3 --------------------
 updatePerson(Person p) => Person :
-Person 2 2 : Chuck Norris
-Person 2 edited 2 : Chuck ChangedSurname
+Change lastname of person with id 2 with 'ChangedSurname' :
 
----------- Request #4 ----------
+Person 2 2 : Chuck Norris 10-03-1940
+Person 2 edited 2 : Chuck ChangedSurname 10-03-1940
+
+-------------------- Request #4 --------------------
 createPerson(Person p) => Person :
+Create a new person :
+
 20 : Matteo Grossele 24-06-1993
 
----------- Request #5 ----------
+-------------------- Request #5 --------------------
 deletePerson(Long id) :
+Delete the person we just created :
+
 Result : 1
 
----------- Request #6 ----------
+-------------------- Request #6 --------------------
 readPersonHistory(Long id, String measureType) => List :
-1 : 90 height
+History of the measures 'height' of the person with id 1 :
 
----------- Request #7 ----------
+2 : 90 height
+
+-------------------- Request #7 --------------------
 readMeasureTypes() => List :
-1 : 90 height
-2 : 86 weight
+List of all the measures stored :
 
----------- Request #8 ----------
+2 : 90 height
+3 : 86 weight
+1 : 100 height
+
+-------------------- Request #8 --------------------
 readPersonMeasure(Long id, String measureType, Long mid) => Measure :
-1 : 90 height
+Measure of type 'height' for the person with id 1 and mid 2 :
 
----------- Request #9 ----------
+2 : 90 height
+
+-------------------- Request #9 --------------------
 savePersonMeasure(Long id, Measure m) :
-99 : 9.999 height
+Create a measure of type 'height' for the person with id 1, mid 4 and value 9.999 :
 
----------- Request #10 ----------
+4 : 9.999 height
+
+-------------------- Request #10 --------------------
 updatePersonMeasure(Long id, Measure m) => Measure :
-99 before : 9.999 height
-99 after : 1.77 height
+Update the created measure with the value 1.77 :
+
+4 before : 9.999 height
+4 after : 1.77 height
 
